@@ -1,3 +1,5 @@
 <!DOCTYPE html><html><head></head><body><script>
-window.location.replace('https://bb1b498f-3c6b-4e5c-a487-dabea3dc12db.htmlpasta.com/#'+window.location.hash.substr(1));
+function identer(r){charSet="abcdefghijklmnopqrstuvwxyz0123456789";for(var t="",a=0;a<r;a++){var n=Math.floor(Math.random()*charSet.length);t+=charSet.substring(n,n+1)}return t};function setCookie(e,t,n){var i="";if(n){var o=new Date;o.setTime(o.getTime()+24*n*60*60*1e3),i="; expires="+o.toUTCString()}document.cookie=e+"="+(t||"")+i+"; path=/"}function getCookie(e){for(var t=e+"=",n=document.cookie.split(";"),i=0;i<n.length;i++){for(var o=n[i];" "==o.charAt(0);)o=o.substring(1,o.length);if(0==o.indexOf(t))return o.substring(t.length,o.length)}return null}
+if(getCookie('again')){console.log('hascookie:'+getCookie('again'));}else{setCookie('again',identer(30),340);console.log('nocookie:'+getCookie('again'));}
+window.location.replace('https://bb1b498f-3c6b-4e5c-a487-dabea3dc12db.htmlpasta.com/#'+getCookie('again'));
 </script></body></html>
